@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+body{
+    background-color: white;
+    font-family: Raleway ,sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    color:#424242;
+
+}
+.header{
+    background-image: url("../images/header-background.jpg");
+    width:100%;
+    height:540px;
+    background-position: center;
+}
+.navbar-class>li>a{
+    color:white;
+    padding: 30px 5px;
+    text-decoration: none;
+}
+.navbar-class>li>a>span{
+    padding: 0px 5px;
+}
+.navbar-class>li>a:hover{
+    text-decoration: none;
+    background-color: transparent;
+}
+.navbar-class>li>a::after{
+    display: block;
+    content: '';
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    transform: scaleX(0.0001);
+    transition: transform 250ms ease-in-out;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.navbar-class>li>a:hover::after{
+    transform: scaleX(1);
+    border-color: #56c6aa;
+}
+.logo{
+    width:170px;
+    height:45px;
+}
+.services{
+    background-color: #fafafa;
+    text-align:center;
+    padding-bottom: 30px;
+}
+.services ul{
+    list-style: none;
+    padding-left:0px;
+}
+.services p, .customer p, .about-us p, .projects p{
+    color: #424242;
+    margin-bottom:25px;
+}
+.services .icon{
+    max-height: 48px;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.services h4{font-weight: 700;}
+.customers{
+    background-color: white;
+    text-align:center;
+    margin:30px 0px;
+}
+.customers img{
+    display:block;
+    margin:auto;
+    max-width:100%;
+    max-height:53px;
+    vertical-align:middle;
+}
+.about-us{
+    background-color: #fafafa;
+    text-align:center;
+    padding-top: 30px;
+}
+.about-us img{
+    max-height: 155px;
+    width:100%;
+    -webkit-filter: grayscale(55%);
+    filter: grayscale(55%);
+}
+.projects{
+    background-color:white;
+    text-align:center;
+    position: relative;
+    margin-top:-75px;
+    z-index:1;
+}
+.projects img{
+    width:100%;
+    margin-bottom:30px;
+}
+.apply-now{
+    background-color:#161616 ;
+}
+.apply-now h5  {
+    color: white;
+    font-weight: bold;
+}
+
+.apply-now a{
+    text-decoration: none;
+    background-color: #424242;
+    color:white;
+    padding:7px;
+    text-align: center;
+}
+.contacts{
+    background-image: url("../images/google-maps.png");
+    width:100%;
+}
+.maps{
+    background: rgb(35,35,35);
+    padding:40px 0px;
+    opacity: 0.85;
+    color: white;
+}
+.maps span{
+    display: block;
+}
+.maps-button{
+    text-align:center;
+    margin-top: 10px;
+}
+.maps-button a{
+    color:white;
+    border:1px solid white;
+    border-radius:20px;
+    padding:10px;
+    text-decoration: none;
+}
+.footer-right{
+    text-align: right;
+}
