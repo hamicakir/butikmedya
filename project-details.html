@@ -15,9 +15,9 @@
             <div class="navbar-right">
                 <ul class="nav navbar-nav navbar-class">
                     <li><a href="index.html"><span>Anasayfa</span></a></li>
-                    <li><a href="/#services"><span>Servislerimiz</span></a></li>
-                    <li><a href="/#customers"><span>Müşterilerimiz</span></a></li>
-                    <li><a href="/#about-us"><span>Hakkımızda</span></a></li>
+                    <li><a href="index.html#services"><span>Servislerimiz</span></a></li>
+                    <li><a href="index.html#customers"><span>Müşterilerimiz</span></a></li>
+                    <li><a href="index.html#about-us"><span>Hakkımızda</span></a></li>
                     <li><a href="projects.html"><span>İşlerimiz</span></a></li>
                     <li><a href="#contacts"><span>İletişim</span></a></li>
                 </ul>
@@ -25,37 +25,33 @@
         </div>
     </nav>
 </header>
-
-<div class="container">
+<div class="container project-detail">
     <div class="row">
-        <div class="col-md-3">
-            <img class="thumbnail"/>
+        <div class="col-md-3 text-right">
+            <div class="project-brand">
+                <img src="images/project-brand.png"/>
+            </div>
             <h3>Karcher Sakarya</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Fusce eu semper risus. Praesent varius leo sed magna mattis hendrerit.
-                Suspendisse non nisl massa. Praesent interdum lectus nisl, id tincidunt libero aliquet vel.
-                Aenean sagittis neque convallis, finibus eros nec, pretium purus. Aenean tristique congue sollicitudin.
-                Suspendisse a mollis libero. Duis et maximus arcu, eu faucibus felis. Nunc vestibulum porta arcu, sit amet suscipit massa.
-                Aenean suscipit mi non convallis dictum.</p>
-            <a class="project-button" href="#">SİTEYE GİT</a>
+                Suspendisse non nisl massa. </p>
+            <a class="btn btn-primary" href="#">Siteye Git</a>
         </div>
         <div class="col-md-9">
-            <img src="images/"/>
+            <img src="images/project.jpg" class="project-prensentation"/>
         </div>
     </div>
 </div>
-
-
 <section id="contacts" class="contacts">
     <div class="container-fluid">
         <div class="row apply-now">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 pull-left">
-                        <h5>Senin için açık bir pozisyonumuz olabilir.</h5>
+                        <span>Senin için açık bir pozisyonumuz olabilir.</span>
                     </div>
                     <div class="col-md-6">
-                        <a class="pull-right" href="#">HEMEN BAŞVUR</a>
+                        <a class="pull-right" href="#">Hemen Başvur</a>
                     </div>
                 </div>
             </div>
@@ -78,9 +74,9 @@
                             <span> info@butikmedya.com</span>
                         </div>
                     </div>
-                    <div class="row maps-button">
-                        <div class="col-md-12">
-                            <a href="#" >HARİTADA GÖSTER</a>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="#" class="btn">Haritada Göster</a>
                         </div>
                     </div>
                 </div>
@@ -90,6 +86,11 @@
         </div>
     </footer>
 </section>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/boutique.js"></script>
 </body>
 </html>
+
+
+

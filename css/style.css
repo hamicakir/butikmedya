@@ -15,7 +15,30 @@ h1,h2,h3,h4,h5,h6{
 a:hover, a:focus{
     text-decoration: none;
 }
-
+.btn{
+    border:1px solid #fff;
+    padding:10px 30px;
+    border-radius: 30px;
+    color:#fff;
+    background: transparent;
+    transition: 200ms;
+    font-weight: 700;
+}
+.btn:hover{
+    background: #fff;
+    color:#0f0f0f;
+}
+.carousel-control{
+    background-image: none !important;
+}
+.btn.btn-primary{
+    border-color: #1d252c;
+    color:#1d252c;
+}
+.btn.btn-primary:hover{
+    background-color:#1d252c;
+    color:#fff;
+}
 
 /* HELPER CLASSES */
 
@@ -41,6 +64,7 @@ a:hover, a:focus{
     width:100%;
     height:103px;
     background-position: center;
+    margin-bottom: 40px;
 }
 .navbar-class>li>a{
     color:white;
@@ -69,9 +93,43 @@ a:hover, a:focus{
     transform: scaleX(1);
     border-color: #56c6aa;
 }
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: transparent;
+}
 .logo{
     width:170px;
     height:45px;
+}
+.sliderhero .arrow svg{
+    width:28px;
+    top: 50%;
+    position: absolute;
+    margin-top: -51px;
+}
+.sliderhero .item{min-height: 456px}
+.sliderhero img.bottom{
+    position: absolute;
+    bottom:0;
+}
+.sliderhero .slide-img{
+    margin-top: 20px;
+}
+.sliderhero .carousel-indicators{
+    bottom:30px;
+}
+.sliderhero .caption{
+    margin-top: 60px;
+    color:#fff;
+}
+.sliderhero .caption .title{
+    font-weight: 700;
+    color:#fff;
+}
+.sliderhero hr{
+    width:100px;
+}
+.sliderhero .btn{
+    margin-top:15px;
 }
 
 
@@ -166,11 +224,6 @@ a:hover, a:focus{
     background-repeat: no-repeat;
     background-position: center 215px;
 }
-.about-us img{
-    max-height: 155px;
-    -webkit-filter: grayscale(55%);
-    filter: grayscale(55%);
-}
 
 
 /* PROJECTS */
@@ -214,7 +267,8 @@ a:hover, a:focus{
 /* PROJECTS PAGE */
 
 .project-images{
-    padding-bottom:20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 .project-images a:hover{
     -webkit-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.3);
@@ -240,6 +294,18 @@ a:hover, a:focus{
     margin-bottom:30px;
 }
 
+
+/* PROJECT PAGE */
+.project-detail{
+    margin-top:40px;
+    margin-bottom: 60px;
+}
+.project-brand{
+    border:1px solid #ddd;
+}
+.project-prensentation{
+    max-width:100%;
+}
 
 /* FOOTER */
 
@@ -270,19 +336,11 @@ a:hover, a:focus{
     padding:40px 0px;
     color: white;
 }
+.maps .btn{
+    margin-top:30px;
+}
 .maps span{
     display: block;
-}
-.maps-button{
-    text-align:center;
-    margin-top: 10px;
-}
-.maps-button a{
-    color:white;
-    border:1px solid white;
-    border-radius:20px;
-    padding:10px;
-    text-decoration: none;
 }
 .footer-right{
     text-align: right;
