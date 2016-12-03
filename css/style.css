@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
+/* GENERAL */
+
 body{
     background-color: white;
     font-family: Raleway ,sans-serif;
@@ -10,6 +12,24 @@ h1,h2,h3,h4,h5,h6{
     color:#424242;
 
 }
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+
+/* HELPER CLASSES */
+
+.v-center{
+    display: table;
+}
+.v-center-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* HEADER */
+
 .header{
     background-image: url("../images/header-background.jpg");
     width:100%;
@@ -53,10 +73,15 @@ h1,h2,h3,h4,h5,h6{
     width:170px;
     height:45px;
 }
+
+
+/* SERVICES */
+
 .services{
     background-color: #fafafa;
     text-align:center;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    padding-top:30px;
 }
 .services ul{
     list-style: none;
@@ -72,39 +97,122 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom:10px;
 }
 .services h4{font-weight: 700;}
+
+
+/* CUSTOMERS */
+
 .customers{
     background-color: white;
     text-align:center;
-    margin:30px 0px;
+    padding:50px 0px 60px 0px;
 }
-.customers img{
-    display:block;
-    margin:auto;
-    max-width:100%;
-    max-height:53px;
+.customers .slide{
+    margin-top:30px;
+}
+.customers a img{
+    display:table-cell;
+    margin:0 auto;
     vertical-align:middle;
+    max-width: 100%;
+    max-height: 35px;
+    transition: 200ms;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
+.customers a:hover img{
+    -webkit-filter: grayscale(1%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(1%);
+}
+.customers .slide .carousel-indicators{
+    position: static;
+    bottom:0;
+    margin-top:30px;
+    width:100%;
+    margin-left:0px;
+}
+.customers .slide .carousel-indicators li{
+    border-color:#ddd;
+    margin:0px 10px;
+    width:150px;
+    height:5px;
+    border:none;
+    background-color: #ddd;
+}
+.customers .slide .carousel-indicators .active{
+    background-color: #1d252c;
+}
+.customers .slide .arrow {
+    display: block;
+    height: 120px;
+}
+.customers .slide .arrow svg {
+    width: 28px;
+    margin-top:6px;
+}
+.brand{
+    width: 100%;
+    height:60px;
+}
+
+
+/* ABOUT US */
+
 .about-us{
     background-color: #fafafa;
     text-align:center;
     padding-top: 30px;
+    padding-bottom:120px;
+    background-image: url("../images/about-us-half-logo.png");
+    background-repeat: no-repeat;
+    background-position: center 215px;
 }
 .about-us img{
     max-height: 155px;
     -webkit-filter: grayscale(55%);
     filter: grayscale(55%);
 }
+
+
+/* PROJECTS */
+
 .projects{
+    padding-top: 40px;
+    padding-bottom:60px;
     background-color:white;
     text-align:center;
-    position: relative;
-    margin-top:-75px;
-    z-index:1;
+}
+
+.projects-gallery a{
+    display:block;
+    transition: 200ms;
+    margin-bottom: 30px;
 }
 .projects img{
-    width:100%;
-    margin-bottom:30px;
+    max-width:100%;
 }
+.projects-gallery a:hover{
+    -webkit-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.3);
+}
+.allprojects{
+    padding:21px 0px 21px 0px;
+    border:1px solid #424242;
+}
+.allprojects img{
+    width:64px;height:64px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.allprojects span{
+    display: block;
+    color:#424242;
+    font-weight: 700;
+}
+
+
+/* PROJECTS PAGE */
+
 .project-images{
     padding-bottom:20px;
 }
@@ -131,29 +239,35 @@ h1,h2,h3,h4,h5,h6{
 .project-p{
     margin-bottom:30px;
 }
+
+
+/* FOOTER */
+
 .apply-now{
     background-color:#161616 ;
 }
-.apply-now h5  {
+.apply-now span {
     color: white;
-    font-weight: bold;
+    font-weight: 700;
+    margin:15px 0px;
+    display: block;
 }
 
 .apply-now a{
     text-decoration: none;
     background-color: #424242;
     color:white;
-    padding:7px;
+    font-weight: 700;
+    padding:15px 20px;
     text-align: center;
 }
 .contacts{
-    background-image: url("../images/google-maps.png");
+    background-image: url("../images/footerbg.jpg");
     width:100%;
+    background-position: center;
 }
 .maps{
-    background: rgb(35,35,35);
     padding:40px 0px;
-    opacity: 0.85;
     color: white;
 }
 .maps span{
