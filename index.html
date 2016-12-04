@@ -3,419 +3,445 @@
     <head>
     <title>Butik Medya</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/hamburgers.min.css"/>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
-        <header class="header">
-            <nav class="nav">
-                <div class="container">
-                    <div class="navbar navbar-brand">
-                        <a href="#" ><img class="logo" src="images/logo.png"/></a>
-                    </div>
-                    <div class="navbar-right">
-                        <ul class="nav navbar-nav navbar-class">
-                            <li><a href="#"><span>Anasayfa</span></a></li>
-                            <li><a href="#services"><span>Servislerimiz</span></a></li>
-                            <li><a href="#customers"><span>Müşterilerimiz</span></a></li>
-                            <li><a href="#about-us"><span>Hakkımızda</span></a></li>
-                            <li><a href="projects.html"><span>İşlerimiz</span></a></li>
-                            <li><a href="#contacts"><span>İletişim</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div id="sliderHero" class="carousel slide sliderhero" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#sliderHero" data-slide-to="0" class="active"></li>
-                    <li data-target="#sliderHero" data-slide-to="1"></li>
-                    <li data-target="#sliderHero" data-slide-to="2"></li>
-                    <li data-target="#sliderHero" data-slide-to="3"></li>
-                </ol>
-                <div class="container">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-md-6 text-center">
-                                    <div class="caption">
-                                        <h1 class="title">KARCHER</h1>
-                                        <hr>
-                                        <p>Yenilikçi, uzman, güvenilir...</p>
-                                        <a class="btn">Projeyi İncele</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6"><img src="images/slide-img-1.png" class="slide-img"> </div>
-                            </div>
+        <nav id="menu" class="panel" role="navigation">
+            <h3>Menu</h3>
+            <ul class="scrollers">
+                <li><a href="#"><span>Anasayfa</span></a></li>
+                <li><a href="#services"><span>Servislerimiz</span></a></li>
+                <li><a href="#customers"><span>Müşterilerimiz</span></a></li>
+                <li><a href="#about-us"><span>Hakkımızda</span></a></li>
+                <li><a href="projects.html"><span>İşlerimiz</span></a></li>
+                <li><a href="#contacts"><span>İletişim</span></a></li>
+            </ul>
+        </nav>
+        <div class="wrap push">
+            <header class="header">
+                <nav class="nav">
+                    <div class="container">
+                        <div class="navbar navbar-brand">
+                            <a href="#" ><img class="logo" src="images/logo.png"/></a>
                         </div>
-                        <div class="item ">
-                            <div class="row">
-                                <div class="col-md-6 text-center">
-                                    <div class="caption">
-                                        <h1 class="title">KARCHER</h1>
-                                        <hr>
-                                        <p>Yenilikçi, uzman, güvenilir...</p>
-                                        <a class="btn">Projeyi İncele</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6"><img src="images/slide-img-1.png" class="slide-img"> </div>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="row">
-                                <div class="col-md-6 text-center">
-                                    <div class="caption">
-                                        <h1 class="title">KARCHER</h1>
-                                        <hr>
-                                        <p>Yenilikçi, uzman, güvenilir...</p>
-                                        <a class="btn">Projeyi İncele</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6"><img src="images/slide-img-1.png" class="slide-img"> </div>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="row">
-                                <div class="col-md-6 text-center">
-                                    <div class="caption">
-                                        <h1 class="title">KARCHER</h1>
-                                        <hr>
-                                        <p>Yenilikçi, uzman, güvenilir...</p>
-                                        <a class="btn">Projeyi İncele</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6"><img src="images/slide-img-1.png" class="slide-img"> </div>
-                            </div>
+                        <div class="navbar-right">
+                            <ul class="nav navbar-nav navbar-class hidden-sm hidden-xs scrollers">
+                                <li><a href="#"><span>Anasayfa</span></a></li>
+                                <li><a href="#services"><span>Servislerimiz</span></a></li>
+                                <li><a href="#customers"><span>Müşterilerimiz</span></a></li>
+                                <li><a href="#about-us"><span>Hakkımızda</span></a></li>
+                                <li><a href="projects.html"><span>İşlerimiz</span></a></li>
+                                <li><a href="#contacts"><span>İletişim</span></a></li>
+                            </ul>
+                                <a href="#menu" class="hamburger hamburger--slider visible-xs visible-sm menu-button menu-link" type="button">
+                                  <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                  </span>
+                                </a>
                         </div>
                     </div>
-                </div>
-                <a class="left carousel-control arrow" href="#sliderHero" role="button" data-slide="prev">
-                    <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
-    <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-        25.7,1.2 1,50.5 26.4,101.2 "/>
-    </svg>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control arrow" href="#sliderHero" role="button" data-slide="next">
-                    <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
-                                <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                                    1.7,1.2 26.4,50.5 1,101.2 "/>
-                                </svg>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </header>
-        <section id="services" class="services">
-            <div class="container">
-                <h1>Neler Yapıyoruz?</h1>
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <p>Her ne yapıyorsak yapalım, güzel yapıyoruz. Üzerine düşünüyor ve araştırıyoruz.
-                            İhtiyaçlarınıza yönelik çözümlerinizi kullanıcı deneyimine uygun tasarlıyor ve kodluyoruz.</p>
-                    </div>
-                    <div class="col-md-3"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <img class="icon" src="images/web-solution.png"/>
-                        <h4>Web Çözümleri</h4>
-                        <ul>
-                            <li>Responsive Web Tasarım</li>
-                            <li>Web Yazılım</li>
-                            <li>E-Ticaret Yazılım</li>
-                            <li>Kurumsal Yazılım</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <img class="icon" src="images/design-solution.png" />
-                        <h4>Tasarım Çözümleri</h4>
-                        <ul>
-                            <li>Responsive Web Tasarım</li>
-                            <li>Web Yazılım</li>
-                            <li>E-Ticaret Yazılım</li>
-                            <li>Kurumsal Yazılım</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <img class="icon" src="images/mobile-solution.png"/>
-                        <h4>Uygulama Çözümleri</h4>
-                        <ul>
-                            <li>Responsive Web Tasarım</li>
-                            <li>Web Yazılım</li>
-                            <li>E-Ticaret Yazılım</li>
-                            <li>Kurumsal Yazılım</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <img class="icon" src="images/digital-marketing-solution.png"/>
-                        <h4>Dijital Reklam Çözümleri</h4>
-                        <ul>
-                            <li>Responsive Web Tasarım</li>
-                            <li>Web Yazılım</li>
-                            <li>E-Ticaret Yazılım</li>
-                            <li>Kurumsal Yazılım</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-        <section id="customers" class="customers">
-            <div class="container">
-                <h1>Kimlerle Çalıştık?</h1>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <p>Yaptığımız tüm işlerde en önemli ekip arkadaşımız daima müşterilerimiz olmuştur.</p>
-                    </div>
-                </div>
-                <div id="customersSlide" class="carousel slide" data-ride="carousel">
-                    <div class="row">
-                        <div class="col-md-1">
-                            <a class="arrow" href="#customersSlide" role="button" data-slide="prev">
-
-                                <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
-    <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-        25.7,1.2 1,50.5 26.4,101.2 "/>
-    </svg>
-
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="carousel-inner" role="listbox">
+                </nav>
+                <div id="sliderHero" class="carousel slide sliderhero" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#sliderHero" data-slide-to="0" class="active"></li>
+                        <li data-target="#sliderHero" data-slide-to="1"></li>
+                        <li data-target="#sliderHero" data-slide-to="2"></li>
+                        <li data-target="#sliderHero" data-slide-to="3"></li>
+                    </ol>
+                    <div class="container">
+                        <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-5.png"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-2.png"/></a>
-                                            </div>
+                                    <div class="col-sm-6 text-center">
+                                        <div class="caption">
+                                            <h1 class="title">KARCHER</h1>
+                                            <hr>
+                                            <p>Yenilikçi, uzman, güvenilir...</p>
+                                            <a class="btn">Projeyi İncele</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"> <img  src="images/brand-3.png"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-4.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-5.png"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-6.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-7.png"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-8.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div class="col-sm-6"><img src="images/slide-img-1.png" class="slide-img"> </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-5.png"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-2.png"/></a>
-                                            </div>
+                                    <div class="col-sm-6 text-center">
+                                        <div class="caption">
+                                            <h1 class="title">KARCHER</h1>
+                                            <hr>
+                                            <p>Yenilikçi, uzman, güvenilir...</p>
+                                            <a class="btn">Projeyi İncele</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"> <img  src="images/brand-3.png"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-4.png"/></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-5.png"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-6.png"/></a>
-                                            </div>
+                                    <div class="col-sm-6"><img src="images/slide-img-1.png" class="slide-img"> </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="row">
+                                    <div class="col-sm-6 text-center">
+                                        <div class="caption">
+                                            <h1 class="title">KARCHER</h1>
+                                            <hr>
+                                            <p>Yenilikçi, uzman, güvenilir...</p>
+                                            <a class="btn">Projeyi İncele</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-7.png"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="v-center brand">
-                                            <div class="v-center-inner">
-                                                <a href="#"><img  src="images/brand-8.png"/></a>
-                                            </div>
+                                    <div class="col-sm-6"><img src="images/slide-img-1.png" class="slide-img"> </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="row">
+                                    <div class="col-sm-6 text-center">
+                                        <div class="caption">
+                                            <h1 class="title">KARCHER</h1>
+                                            <hr>
+                                            <p>Yenilikçi, uzman, güvenilir...</p>
+                                            <a class="btn">Projeyi İncele</a>
                                         </div>
                                     </div>
+                                    <div class="col-sm-6"><img src="images/slide-img-1.png" class="slide-img"> </div>
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <a class="left carousel-control arrow hidden-xs" href="#sliderHero" role="button" data-slide="prev">
+                        <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
+        <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+            25.7,1.2 1,50.5 26.4,101.2 "/>
+        </svg>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control arrow hidden-xs" href="#sliderHero" role="button" data-slide="next">
+                        <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
+                                    <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                                        1.7,1.2 26.4,50.5 1,101.2 "/>
+                                    </svg>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </header>
+            <section id="services" class="services">
+                <div class="container">
+                    <h1>Neler Yapıyoruz?</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <p>Her ne yapıyorsak yapalım, güzel yapıyoruz. Üzerine düşünüyor ve araştırıyoruz.
+                                İhtiyaçlarınıza yönelik çözümlerinizi kullanıcı deneyimine uygun tasarlıyor ve kodluyoruz.</p>
                         </div>
-                        <div class="col-md-1">
-                            <a class="arrow" href="#customersSlide" role="button" data-slide="next">
-                                <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
-                                <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                                    1.7,1.2 26.4,50.5 1,101.2 "/>
-                                </svg>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <img class="icon" src="images/web-solution.png"/>
+                            <h4>Web Çözümleri</h4>
+                            <ul>
+                                <li>Responsive Web Tasarım</li>
+                                <li>Web Yazılım</li>
+                                <li>E-Ticaret Yazılım</li>
+                                <li>Kurumsal Yazılım</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <img class="icon" src="images/design-solution.png" />
+                            <h4>Tasarım Çözümleri</h4>
+                            <ul>
+                                <li>Responsive Web Tasarım</li>
+                                <li>Web Yazılım</li>
+                                <li>E-Ticaret Yazılım</li>
+                                <li>Kurumsal Yazılım</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <img class="icon" src="images/mobile-solution.png"/>
+                            <h4>Uygulama Çözümleri</h4>
+                            <ul>
+                                <li>Responsive Web Tasarım</li>
+                                <li>Web Yazılım</li>
+                                <li>E-Ticaret Yazılım</li>
+                                <li>Kurumsal Yazılım</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <img class="icon" src="images/digital-marketing-solution.png"/>
+                            <h4>Dijital Reklam Çözümleri</h4>
+                            <ul>
+                                <li>Responsive Web Tasarım</li>
+                                <li>Web Yazılım</li>
+                                <li>E-Ticaret Yazılım</li>
+                                <li>Kurumsal Yazılım</li>
+                            </ul>
+                        </div>
 
-                                <span class="sr-only">Next</span>
-                            </a>
+                    </div>
+                </div>
+
+            </section>
+            <section id="customers" class="customers">
+                <div class="container">
+                    <h1>Kimlerle Çalıştık?</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <p>Yaptığımız tüm işlerde en önemli ekip arkadaşımız daima müşterilerimiz olmuştur.</p>
                         </div>
                     </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="#customersSlide" data-slide-to="0" class="active"></li>
-                        <li data-target="#customersSlide" data-slide-to="1"></li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-        <section id="about-us" class="about-us">
-            <div class="container">
-                <h1>Butik Medya Kimdir?</h1>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <p>Her ne yapıyorsak yapalım, güzel yapıyoruz. Üzerine düşünüyor ve araştırıyoruz. İhtiyaçlarınıza yönelik çözümlerinizi kullanıcı deneyimine uygun tasarlıyor ve kodluyoruz.</p>
-                    </div>
-                </div>
-
-                <!--<div class="row">
-                    <div class="col-md-12">
-                        <img src="images/about-us-half-logo.png"/>
-                    </div>
-                </div>!-->
-            </div>
-
-        </section>
-        <section id="projects" class="projects">
-            <div class="container">
-                <h1>Neler Yaptık?</h1>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <p>Yaptığımız her işi zevkle yaptık. Sizinde işiniz burada yer alsın.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid projects-gallery">
-                <div class="row">
-                    <div class="col-md-3">
-                        <a href="#"><img src="images/project-thumbnail-2.png"/></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><img src="images/project-thumbnail-3.png"/></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><img src="images/project-thumbnail-4.png"/></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><img src="images/project-thumbnail-1.png"/></a>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <a href="#"><img src="images/project-thumbnail-1.png"/></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><img src="images/project-thumbnail-4.png"/></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><img src="images/project-thumbnail-3.png"/></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="#"><div class="allprojects"><img src="images/allprojects.png"><span>Tüm İşleri Görüntüle</span></div></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="contacts" class="contacts">
-            <div class="container-fluid">
-                <div class="row apply-now">
-                    <div class="container">
+                    <div id="customersSlide" class="carousel slide" data-ride="carousel">
                         <div class="row">
-                            <div class="col-md-6 pull-left">
-                                <span>Senin için açık bir pozisyonumuz olabilir.</span>
+                            <div class="col-sm-1">
+                                <a class="arrow" href="#customersSlide" role="button" data-slide="prev">
+
+                                    <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
+        <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+            25.7,1.2 1,50.5 26.4,101.2 "/>
+        </svg>
+
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="arrow visible-xs" href="#customersSlide" role="button" data-slide="next">
+                                    <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
+                                    <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                                        1.7,1.2 26.4,50.5 1,101.2 "/>
+                                    </svg>
+
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
-                            <div class="col-md-6">
-                                <a class="pull-right" href="#">Hemen Başvur</a>
+                            <div class="col-sm-10">
+                                <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-xs-6">
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-5.png"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-2.png"/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"> <img  src="images/brand-3.png"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-4.png"/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-5.png"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-6.png"/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-7.png"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-8.png"/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-xs-6">
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-5.png"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-2.png"/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"> <img  src="images/brand-3.png"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-4.png"/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-5.png"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-6.png"/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6">
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-7.png"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="v-center brand">
+                                                <div class="v-center-inner">
+                                                    <a href="#"><img  src="images/brand-8.png"/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            </div>
+                            <div class="col-sm-1">
+                                <a class="arrow hidden-xs" href="#customersSlide" role="button" data-slide="next">
+                                    <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 103" xml:space="preserve">
+                                    <polyline id="XMLID_2_" fill="none" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                                        1.7,1.2 26.4,50.5 1,101.2 "/>
+                                    </svg>
+
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#customersSlide" data-slide-to="0" class="active"></li>
+                            <li data-target="#customersSlide" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section id="about-us" class="about-us">
+                <div class="container">
+                    <h1>Butik Medya Kimdir?</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <p>Her ne yapıyorsak yapalım, güzel yapıyoruz. Üzerine düşünüyor ve araştırıyoruz. İhtiyaçlarınıza yönelik çözümlerinizi kullanıcı deneyimine uygun tasarlıyor ve kodluyoruz.</p>
+                        </div>
+                    </div>
+
+                    <!--<div class="row">
+                        <div class="col-md-12">
+                            <img src="images/about-us-half-logo.png"/>
+                        </div>
+                    </div>!-->
+                </div>
+
+            </section>
+            <section id="projects" class="projects">
+                <div class="container">
+                    <h1>Neler Yaptık?</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <p>Yaptığımız her işi zevkle yaptık. Sizinde işiniz burada yer alsın.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <footer>
+                <div class="container-fluid projects-gallery">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="#"><img src="images/project-thumbnail-2.png"/></a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="#"><img src="images/project-thumbnail-3.png"/></a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="#"><img src="images/project-thumbnail-4.png"/></a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="#"><img src="images/project-thumbnail-1.png"/></a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="#"><img src="images/project-thumbnail-1.png"/></a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="#"><img src="images/project-thumbnail-4.png"/></a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="#"><img src="images/project-thumbnail-3.png"/></a>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <a href="#"><div class="allprojects"><img src="images/allprojects.png"/></div></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section id="contacts" class="contacts">
                 <div class="container-fluid">
-                    <div class="row maps">
+                    <div class="row apply-now">
                         <div class="container">
-
                             <div class="row">
-                                <div class="col-md-6">
-                                    <span>Arabacıalanı Mah. Şht. Mehmet Karabaşoğlu Cd.</span>
-                                    <span>No:38/12</span>
-                                    <span>Serdivan,Sakarya,Türkiye</span>
+                                <div class="col-sm-6">
+                                    <span>Senin için açık bir pozisyonumuz olabilir.</span>
                                 </div>
-                                <div class="col-md-6 footer-right">
-                                    <span> +90 264 211 21 22</span>
-                                    <span> +90 546 861 18 78</span>
-                                    <span> info@butikmedya.com</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <a href="#" class="btn">Haritada Göster</a>
+                                <div class="col-sm-6">
+                                    <a href="#">Hemen Başvur</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row maps">
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <span>Arabacıalanı Mah. Şht. Mehmet Karabaşoğlu Cd.</span>
+                                        <span>No:38/12</span>
+                                        <span>Serdivan,Sakarya,Türkiye</span>
+                                    </div>
+                                    <div class="col-sm-6 footer-right">
+                                        <span> +90 264 211 21 22</span>
+                                        <span> +90 546 861 18 78</span>
+                                        <span> info@butikmedya.com</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <a href="#" class="btn">Haritada Göster</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
-
-                </div>
-            </footer>
-        </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                </footer>
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/bigSlide.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
         <script src="js/boutique.js"></script>

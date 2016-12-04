@@ -3,121 +3,143 @@
 <head>
     <title>Butik Medya</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/hamburgers.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<header class="header-alt">
-    <nav class="nav">
-        <div class="container">
-            <div class="navbar navbar-brand">
-                <a href="#" ><img class="logo" src="images/logo.png"/></a>
-            </div>
-            <div class="navbar-right">
-                <ul class="nav navbar-nav navbar-class">
-                    <li><a href="index.html"><span>Anasayfa</span></a></li>
-                    <li><a href="index.html#services"><span>Servislerimiz</span></a></li>
-                    <li><a href="index.html#customers"><span>Müşterilerimiz</span></a></li>
-                    <li><a href="index.html#about-us"><span>Hakkımızda</span></a></li>
-                    <li><a href="projects.html"><span>İşlerimiz</span></a></li>
-                    <li><a href="#contacts"><span>İletişim</span></a></li>
-                </ul>
-            </div>
-        </div>
+    <nav id="menu" class="panel" role="navigation">
+        <h3>Menu</h3>
+        <ul class="scrollers">
+            <li><a href="index.html"><span>Anasayfa</span></a></li>
+            <li><a href="index.html#services"><span>Servislerimiz</span></a></li>
+            <li><a href="index.html#customers"><span>Müşterilerimiz</span></a></li>
+            <li><a href="index.html#about-us"><span>Hakkımızda</span></a></li>
+            <li><a href="projects.html"><span>İşlerimiz</span></a></li>
+            <li><a href="#contacts"><span>İletişim</span></a></li>
+        </ul>
     </nav>
-</header>
-<div class="container text-center">
-        <h1>Neler Yaptık?</h1>
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <p>Yaptığımız her işi zevkle yaptık. Sizinde işiniz burada yer alsın.</p>
-        </div>
-    </div>
-    <div class="project-images">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-1.png"><h4>02 Özel</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-2.png"><h4>Myfi</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-3.png"><h4>Terzioğlu İnşaat</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-4.png"><h4>Karcher Sakarya</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-4.png"><h4>Karcher Sakarya</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-3.png"><h4>Terzioğlu İnşaat</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-2.png"><h4>Myfi</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-1.png"><h4>02 Özel</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-1.png"><h4>02 Özel</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-2.png"><h4>Myfi</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-3.png"><h4>Terzioğlu İnşaat</h4></a>
-            </div>
-            <div class="col-md-3">
-                <a href="project-details.html"><img src="images/project-cover-4.png"><h4>Karcher Sakarya</h4></a>
-            </div>
-        </div>
-    </div>
-</div>
-<section id="contacts" class="contacts">
-    <div class="container-fluid">
-        <div class="row apply-now">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 pull-left">
-                        <span>Senin için açık bir pozisyonumuz olabilir.</span>
-                    </div>
-                    <div class="col-md-6">
-                        <a class="pull-right" href="#">Hemen Başvur</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="container-fluid">
-            <div class="row maps">
+    <div class="wrap push">
+        <header class="header-alt">
+            <nav class="nav">
                 <div class="container">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <span>Arabacıalanı Mah. Şht. Mehmet Karabaşoğlu Cd.</span>
-                            <span>No:38/12</span>
-                            <span>Serdivan,Sakarya,Türkiye</span>
-                        </div>
-                        <div class="col-md-6 footer-right">
-                            <span> +90 264 211 21 22</span>
-                            <span> +90 546 861 18 78</span>
-                            <span> info@butikmedya.com</span>
-                        </div>
+                    <div class="navbar navbar-brand">
+                        <a href="#" ><img class="logo" src="images/logo.png"/></a>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <a href="#" class="btn">Haritada Göster</a>
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav navbar-class hidden-sm hidden-xs scrollers">
+                            <li><a href="#"><span>Anasayfa</span></a></li>
+                            <li><a href="#services"><span>Servislerimiz</span></a></li>
+                            <li><a href="#customers"><span>Müşterilerimiz</span></a></li>
+                            <li><a href="#about-us"><span>Hakkımızda</span></a></li>
+                            <li><a href="projects.html"><span>İşlerimiz</span></a></li>
+                            <li><a href="#contacts"><span>İletişim</span></a></li>
+                        </ul>
+                        <a href="#menu" class="hamburger hamburger--slider visible-xs visible-sm menu-button menu-link" type="button">
+                                  <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                  </span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container text-center">
+            <h1>Neler Yaptık?</h1>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>Yaptığımız her işi zevkle yaptık. Sizinde işiniz burada yer alsın.</p>
+                </div>
+            </div>
+            <div class="project-images">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-1.png"><h4>02 Özel</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-2.png"><h4>Myfi</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-3.png"><h4>Terzioğlu İnşaat</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-4.png"><h4>Karcher Sakarya</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-4.png"><h4>Karcher Sakarya</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-3.png"><h4>Terzioğlu İnşaat</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-2.png"><h4>Myfi</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-1.png"><h4>02 Özel</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-1.png"><h4>02 Özel</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-2.png"><h4>Myfi</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-3.png"><h4>Terzioğlu İnşaat</h4></a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <a href="project-details.html"><img src="images/project-cover-4.png"><h4>Karcher Sakarya</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="contacts" class="contacts">
+            <div class="container-fluid">
+                <div class="row apply-now">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <span>Senin için açık bir pozisyonumuz olabilir.</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="#">Hemen Başvur</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row maps">
+                        <div class="container">
 
-        </div>
-    </footer>
-</section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <span>Arabacıalanı Mah. Şht. Mehmet Karabaşoğlu Cd.</span>
+                                    <span>No:38/12</span>
+                                    <span>Serdivan,Sakarya,Türkiye</span>
+                                </div>
+                                <div class="col-sm-6 footer-right">
+                                    <span> +90 264 211 21 22</span>
+                                    <span> +90 546 861 18 78</span>
+                                    <span> info@butikmedya.com</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <a href="#" class="btn">Haritada Göster</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/bigSlide.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/boutique.js"></script>
 </body>
 </html>

@@ -39,6 +39,8 @@ a:hover, a:focus{
     background-color:#1d252c;
     color:#fff;
 }
+.ui-loader{
+    display: none;}
 
 /* HELPER CLASSES */
 
@@ -66,6 +68,7 @@ a:hover, a:focus{
     background-position: center;
     margin-bottom: 40px;
 }
+.navbar-brand{padding:15px 0px;}
 .navbar-class>li>a{
     color:white;
     padding: 30px 5px;
@@ -100,6 +103,21 @@ a:hover, a:focus{
     width:170px;
     height:45px;
 }
+.menu-button{
+    margin-top:7px;
+    text-align: right;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+    background-color: #fff;
+}
+.hamburger{
+    position: absolute;
+    right:0;
+    transition-property: opacity,filter,right;
+}
+.hamburger.is-active {
+    position: fixed;
+}
 .sliderhero .arrow svg{
     width:28px;
     top: 50%;
@@ -113,6 +131,7 @@ a:hover, a:focus{
 }
 .sliderhero .slide-img{
     margin-top: 20px;
+    max-width: 100%;
 }
 .sliderhero .carousel-indicators{
     bottom:30px;
@@ -249,18 +268,9 @@ a:hover, a:focus{
     box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.3);
 }
 .allprojects{
-    padding:21px 0px 21px 0px;
     border:1px solid #424242;
 }
 .allprojects img{
-    width:64px;height:64px;
-    display: block;
-    margin: 0 auto 10px auto;
-}
-.allprojects span{
-    display: block;
-    color:#424242;
-    font-weight: 700;
 }
 
 
@@ -306,7 +316,9 @@ a:hover, a:focus{
 .project-prensentation{
     max-width:100%;
 }
-
+.project-caption{
+    text-align: right;
+}
 /* FOOTER */
 
 .apply-now{
@@ -318,14 +330,13 @@ a:hover, a:focus{
     margin:15px 0px;
     display: block;
 }
-
 .apply-now a{
     text-decoration: none;
     background-color: #424242;
     color:white;
+    float: right;
     font-weight: 700;
     padding:15px 20px;
-    text-align: center;
 }
 .contacts{
     background-image: url("../images/footerbg.jpg");
@@ -344,4 +355,118 @@ a:hover, a:focus{
 }
 .footer-right{
     text-align: right;
+}
+
+
+/* PANEL */
+.panel {
+    position: fixed;
+    right: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+    background: #ddd;
+    border-radius: 0px;
+    border-left: 7px solid #bfbfbf;
+}
+.panel ul{
+    width:100%;
+    padding: 0px 15px;
+    list-style: none;
+}
+.panel h3{
+    padding-left:15px;
+}
+.panel ul li a{
+    color:#424242;
+    font-weight: 700;
+    padding:15px 0px;
+    display: block;
+    border-bottom: 1px solid #9d9d9d;
+}
+.wrap {
+    position: relative;
+}
+
+
+/* RESPONSIVE */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .sliderhero .item {
+        margin-top:70px;
+        min-height: 356px;
+    }
+    .project-images h4{
+        font-size:14px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .sliderhero .caption{
+        margin-top:10px;
+    }
+    .sliderhero .item {
+        margin-top:0px;
+    }
+    .sliderhero .slide-img{
+        width:350px;
+        display: block;
+        margin:10px auto 0 auto;
+    }
+    .customers .slide .arrow {
+        display: inline !important;
+        height:auto;
+        margin:0 15px;
+    }
+    .customers .slide .arrow.hidden-xs {
+         display: none !important;
+    }
+    .customers .slide .arrow svg{
+        width:15px;
+    }
+    .customers .slide .carousel-indicators li{
+        width:30px;
+        margin:0 5px;
+    }
+
+    .apply-now span {
+        text-align: center;
+    }
+    .apply-now a{
+        float:none;
+        text-align: center;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .maps, .maps .footer-right{
+        text-align: center;
+    }
+    .project-caption{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .project-brand img{
+        margin: 0 auto;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .about-us{
+        -webkit-background-size: 500px;
+        background-size: 500px;
+        background-position: center 240px ;
+        height: 310px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
 }
