@@ -22,9 +22,9 @@ $(document).ready(function() {
 $(window).scroll(function() {
 
     if ($(this).scrollTop() > 10){
-        $(".nav").addClass("sticky-nav");
+        $(".sticky-nav").addClass("open");
     }
     else{
-        $(".nav").removeClass("sticky-nav");
+        $(".sticky-nav").removeClass("open");
     }
 });

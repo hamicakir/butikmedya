@@ -40,7 +40,9 @@ a:hover, a:focus{
     color:#fff;
 }
 .ui-loader{
-    display: none;}
+    display: none;
+}
+.modal-content{border-radius: 0px;}
 
 /* HELPER CLASSES */
 
@@ -99,11 +101,33 @@ a:hover, a:focus{
 .nav>li>a:focus, .nav>li>a:hover{
     background-color: transparent;
 }
-.nav.sticky-nav{
+.sticky-nav{
+    position: static;
+    z-index: 9;
+    transition: 200ms;
+}
+.sticky-nav.open{
     position: fixed;
+    width:100%;
+    background: #fafafa;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
+}
+.sticky-nav.open .navbar-class>li>a{
+    color:#424242;
+    padding: 25px 5px 0px 5px;
+}
+.sticky-nav.open .logo{
+    background-image: url("../images/logo-inverse.png");
+}
+
+.sticky-nav.open .hamburger-inner, .sticky-nav.open .hamburger-inner:after, .sticky-nav.open .hamburger-inner:before{
+    background-color: #424242;
 }
 .logo{
     width:170px;
+    height:45px;
+    background: url("../images/logo.png") no-repeat;
+    background-size: 170px;
     height:45px;
 }
 .menu-button{
