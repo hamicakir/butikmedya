@@ -99,6 +99,9 @@ a:hover, a:focus{
 .nav>li>a:focus, .nav>li>a:hover{
     background-color: transparent;
 }
+.nav.sticky-nav{
+    position: fixed;
+}
 .logo{
     width:170px;
     height:45px;

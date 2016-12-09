@@ -18,3 +18,13 @@ $(document).ready(function() {
         easyClose: 'true',
         activeBtn: 'is-active'});
 });
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop() > 10){
+        $(".nav").addClass("sticky-nav");
+    }
+    else{
+        $(".nav").removeClass("sticky-nav");
+    }
+});
