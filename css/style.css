@@ -123,6 +123,10 @@ a:hover, a:focus{
 .sticky-nav.open .hamburger-inner, .sticky-nav.open .hamburger-inner:after, .sticky-nav.open .hamburger-inner:before{
     background-color: #424242;
 }
+
+.sticky-nav.open .home-button svg path{
+    fill: #424242;
+}
 .logo{
     width:170px;
     height:45px;
@@ -133,6 +137,10 @@ a:hover, a:focus{
 .menu-button{
     margin-top:7px;
     text-align: right;
+}
+.home-button{
+    text-align: right;
+    margin-top: 17px;
 }
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
     background-color: #fff;
@@ -434,6 +442,9 @@ a:hover, a:focus{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .header-alt{
+        height:76px;
+    }
     .sliderhero .caption{
         margin-top:10px;
     }

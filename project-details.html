@@ -6,21 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Butik Medya</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/hamburgers.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
 </head>
 <body>
-<nav id="menu" class="panel" role="navigation">
-    <h3>Menu</h3>
-    <ul class="scrollers">
-        <li><a href="index.html"><span>Anasayfa</span></a></li>
-        <li><a href="index.html#services"><span>Servislerimiz</span></a></li>
-        <li><a href="index.html#customers"><span>Müşterilerimiz</span></a></li>
-        <li><a href="index.html#about-us"><span>Hakkımızda</span></a></li>
-        <li><a href="projects.html"><span>İşlerimiz</span></a></li>
-        <li><a href="#contacts"><span>İletişim</span></a></li>
-    </ul>
-</nav>
 <div class="wrap push">
     <header class="header-alt">
         <div class="sticky-nav">
@@ -31,12 +20,19 @@
                     </div>
                     <div class="navbar-right">
                         <ul class="nav navbar-nav navbar-class hidden-sm hidden-xs scrollers">
-                            <li><a href="#"><span>Anasayfaya Dön</span></a></li>
+                            <li><a href="index.html"><span>Anasayfaya Dön</span></a></li>
                         </ul>
-                        <a href="#menu" class="hamburger hamburger--slider visible-xs visible-sm menu-button menu-link" type="button">
-                                      <span class="hamburger-box">
-                                        <span class="hamburger-inner"></span>
-                                      </span>
+                        <a href="projects.html" class="home-button visible-xs visible-sm">
+                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" enable-background="new 0 0 40 40" width="30px" heigh="30px" xml:space="preserve">
+<g id="XMLID_9_">
+	<path id="XMLID_11_" fill="#FFFFFF" d="M30.8,40c-0.4,0-0.9-0.1-1.3-0.4L5.9,22.3c-0.6-0.4-0.9-1-0.9-1.7c0-0.7,0.3-1.3,0.8-1.8
+		L29.5,0.5c1-0.7,2.3-0.6,3.1,0.4c0.7,1,0.6,2.3-0.4,3.1L10.8,20.5L32.1,36c1,0.7,1.2,2.1,0.5,3.1C32.1,39.7,31.5,40,30.8,40z"/>
+</g>
+</svg>
+
+
+
                         </a>
                     </div>
                 </div>
@@ -47,24 +43,24 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="project-caption">
-                    <div class="project-brand">
+                    <div class="project-brand wow fadeInRight">
                         <img class="img-responsive" src="images/project-brand.png"/>
                     </div>
-                    <h3>Karcher Sakarya</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <h3 class="wow fadeInRight" data-wow-delay="200ms">Karcher Sakarya</h3>
+                    <p class="wow fadeInRight" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Fusce eu semper risus. Praesent varius leo sed magna mattis hendrerit.
                         Suspendisse non nisl massa. </p>
-                    <a class="btn btn-primary" href="#">Siteye Git</a>
+                    <a class="btn btn-primary wow fadeInRight" data-wow-delay="600ms" href="#">Siteye Git</a>
                 </div>
             </div>
             <div class="col-sm-9">
-                <img src="images/project.jpg" class="project-prensentation"/>
+                <img src="images/project.jpg" class="project-prensentation wow fadeIn" data-wow-delay="800ms"/>
             </div>
         </div>
     </div>
     <section id="contacts" class="contacts">
         <div class="container-fluid">
-            <div class="row apply-now">
+            <div class="row apply-now wow fadeIn">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -77,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <footer class="wow fadeIn" data-wow-delay="200ms">
             <div class="container-fluid">
                 <div class="row maps">
                     <div class="container">
@@ -124,10 +120,9 @@
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="js/bigSlide.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
 <script src="js/boutique.js"></script>
+<script src="js/wow.min.js"></script>
 </body>
 </html>
 
