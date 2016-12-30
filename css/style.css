@@ -1,5 +1,28 @@
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
 
 
 /* GENERAL */
@@ -379,7 +402,7 @@ a:hover, a:focus{
     background-position: center;
 }
 .maps{
-    padding:40px 0px;
+    padding:40px 0px 0px 0px;
     color: white;
 }
 .maps .btn{
@@ -393,7 +416,118 @@ a:hover, a:focus{
 }
 
 
+/* SOCIAL ICONS */
+
+.soc {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 48px;
+  padding: 15px 0px 10px 0px;
+  text-align: center;
+}
+.soc li {
+  display: inline-block;
+  margin: 12px;
+  margin: 1.2rem;
+}
+.soc a, .soc svg {
+  display: block;
+}
+.soc a {
+  position: relative;
+  height: 26px;
+  height: 2.6rem;
+  width: 26px;
+  width: 2.6rem;
+}
+.soc svg {
+  height: 100%;
+  width: 100%;
+}
+.soc em {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -0.75em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.icon-1:hover, .icon-2:hover, .icon-3:hover, .icon-4:hover, .icon-5:hover, .icon-6:hover, .icon-7:hover, .icon-8:hover, .icon-9:hover, .icon-10:hover, .icon-11:hover, .icon-12:hover, .icon-13:hover, .icon-14:hover, .icon-15:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .icon-26:hover, .icon-27:hover, .icon-28:hover, .icon-29:hover, .icon-30:hover {
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.icon-3 {
+  color: #fff;
+  fill: #fff;
+}
+.icon-3:hover {
+  background: #fff;
+}
+.icon-10 {
+  color: #fff;
+  fill: #fff;
+}
+.icon-10:hover {
+  background: #fff;
+}
+
+.icon-15 {
+  color: #fff;
+  fill: #fff;
+}
+.icon-15:hover {
+  background: #fff;
+}
+
+
+/* PARALLAX EFFECTS */
+
+.parallax-effects{
+	position:relative;
+	z-index:8;
+}
+.parallax-effects .item-1{
+	position:absolute;
+	top:350px;
+	left:50px;
+	width:150px;
+	height:150px;
+	background-image:url(../images/parallax-item-1.png);
+}
+.parallax-effects .item-2{
+	position:absolute;
+	top:800px;
+	right:300px;
+	width:210px;
+	height:234px;
+	background-image:url(../images/parallax-item-2.png);
+}
+.parallax-effects .item-3{
+	position:absolute;
+	top:1500px;
+	right:600px;
+	width:150px;
+	height:127px;
+	background-image:url(../images/parallax-item-3.png);
+}
+
+
 /* PANEL */
+
 .panel {
     position: fixed;
     right: -15.625em; /*left or right and the width of your navigation panel*/
